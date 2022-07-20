@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('Res_Adm');
             $table->string('Reg_Operador');
-            $table->string('Categoría');
+            $table->string('Categoria');        /* ->default('Profesional A') */
             $table->string('Operador');
             $table->string('Propietario');
             $table->string('Marca');
@@ -29,7 +29,7 @@ class CreateProductsTable extends Migration
             $table->date('Fecha_Emision');
             $table->date('Fecha_Inicio');
             $table->date('Fecha_Final');
-            $table->string('Estado')->default('Nuevo');       /* Nuevo_Renovación */
+            $table->string('Estado');       /*->default('Nuevo')    Nuevo_Renovación */
             $table->string('Qr');
             $table->timestamps();
         });
